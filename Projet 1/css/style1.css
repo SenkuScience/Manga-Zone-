@@ -1,0 +1,162 @@
+body {
+  background: black;
+}
+
+.jjk1 {
+  color: white;
+  width: 100%;
+  font-size: 60px;
+  font-family: bold;
+  margin-left: 80px;
+  text-align: center;
+}
+
+.senku,
+.eminence {
+  color: white;
+  width: 70%;
+  font-size: 60px;
+  font-family: bold;
+  margin-left: 80px;
+  text-align: center;
+  height: 200px;
+  text-align: center;
+}
+
+.cid-pic {
+  width: 100%;
+  height: 215px;
+  z-index: -1;
+  position: absolute;
+  margin-left: -100px;
+  opacity: 30%;
+}
+
+#cid-tête {
+  z-index: 1;
+  text-align: center;
+}
+
+.jjk1:hover {
+  transition: 5s;
+}
+
+#jjk2 {
+  height: 60px;
+  width: 30%;
+}
+
+.vid2 {
+  z-index: -1;
+  opacity: 30%;
+  position: absolute;
+  height: 500px;
+  max-width: fit-content;
+}
+
+#saison1,
+#saison2,
+#saison3 {
+  text-decoration: none;
+  font-size: 45px;
+  border: solid 2px #118719;
+  text-align: center;
+  border-radius: 50px;
+  margin-bottom: 20px;
+  background: url(/css/Picture/image17.jpg) center/cover no-repeat;
+  width: 40%;
+  height: 220px;
+  align-content: center;
+}
+
+.mousemove {
+  transform: translateX(0);
+  opacity: 1;
+  transition: 1s;
+}
+
+a {
+  text-decoration: none;
+}
+
+.resume1,
+.resume2,
+.resume3 {
+  color: white;
+  border-radius: 10px;
+  border: solid 2px #1f6feb;
+  padding: 10px;
+  background: rgb(44, 41, 41);
+}
+
+.cid {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 50% 50%;
+  text-decoration: none;
+  border-top: solid 3px white;
+  border-bottom: solid 3px white;
+  z-index: 2;
+}
+
+.cid li {
+  background: url(/css/Picture/image15.jpg) center/cover no-repeat;
+  width: 40%;
+  height: 220px;
+
+  margin-top: 50px;
+  align-content: center;
+  text-decoration: none;
+  list-style: none;
+  font-size: 45px;
+  border: double 5px #8c0e0e;
+  text-align: center;
+  border-radius: 20px;
+  margin-bottom: 20px;
+}
+
+.cid li:hover {
+  transform: scale(1.2);
+  transition: 3s;
+}
+
+#senku {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  text-decoration: none;
+  border-top: solid 3px white;
+  border-bottom: solid 3px white;
+}
+
+#senku li {
+  background: url(/css/Picture/image16.jpg) center/cover no-repeat;
+  width: 60%;
+  height: 180px;
+  text-decoration: none;
+
+  font-size: 50px;
+  border: double 5px #8c0e0e;
+  text-align: center;
+  border-radius: 20px;
+  margin: 40px 40px 40px 40px;
+  list-style: none;
+  align-content: center;
+}
+
+#senku li:hover {
+  transform: scale(1.2);
+  width: 80%;
+  transition: 3s;
+}
+
+@media screen and (min-width: 1300px) {
+  .cid li {
+    width: 30%;
+    height: 300px;
+  }
+}
+@media screen and (max-width: 800px) {
+  .jjk1 {
+    width: 70%;
+  }
+}

@@ -1,0 +1,337 @@
+.flexbox1,
+.flexbox2,
+.flexbox3 {
+  display: flex;
+
+  align-items: center;
+}
+
+.flexbox1 li,
+.flexbox2 li,
+.flexbox3 li {
+  list-style: none;
+  text-transform: uppercase;
+  font-size: 30px;
+  height: 50;
+  width: 70%;
+  background: greenyellow;
+  border: 2px solid black;
+  border-radius: 40px;
+  margin: 2px;
+  text-align: center;
+  transition: 1s;
+}
+
+.flexbox1 a,
+.flexbox2 a,
+.flexbox3 a {
+  text-decoration: none;
+}
+body {
+  background: black;
+  min-height: 100vh;
+  color: white;
+  transition: background-color 0.5s;
+}
+h1 {
+  font-size: 70px;
+  color: auto;
+}
+
+#inscription {
+  display: grid;
+  grid-template-columns: 40% 60%;
+  margin: 0;
+  height: 900px;
+  background: black;
+  position: relative;
+  border-top: solid 2px white;
+  border-bottom: solid 2px white;
+  color: white;
+}
+#t1 {
+  font-size: 50px;
+  font-weight: bold;
+  color: white;
+}
+#username1,
+#password1 {
+  height: 50px;
+  width: 50%;
+  border-radius: 80px;
+  font-size: 30px;
+}
+
+.inscription-contain {
+  width: 100%;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr;
+  grid-template-areas:
+    "i1 i2"
+    "i3 i4"
+    "i5 i6";
+  z-index: 2;
+}
+
+.Nom {
+  display: grid;
+  grid-area: i1;
+}
+#Nom {
+  display: grid;
+  grid-area: i1;
+}
+.Prenom {
+  display: grid;
+  grid-area: i3;
+}
+#Prenom {
+  display: grid;
+  grid-area: i2;
+}
+.Date {
+  display: grid;
+  grid-area: i5;
+}
+#Date {
+  display: grid;
+  grid-area: i3;
+}
+.s1 {
+  height: 50px;
+  width: 50%;
+  border-radius: 80px;
+  font-size: 30px;
+  padding-left: 30px;
+  transition: 2s;
+}
+.s1:hover {
+  background: black;
+  color: white;
+}
+
+#s11,
+#s12,
+#s13 {
+  font-size: 20px;
+  margin: 10px;
+}
+.Nom,
+.Prenom,
+.Date,
+.password,
+.Cpassword,
+#pass1,
+#user1 {
+  font-size: 30px;
+}
+#Nom,
+#Prenom,
+#Date,
+#btn1,
+.who-are-you label,
+#password,
+#Cpassword,
+#mail1,
+#username1,
+#password1 {
+  font-size: 30px;
+}
+
+#Nom,
+#Prenom,
+#Date,
+#btn1,
+#password,
+#Cpassword,
+#mail1,
+#username1,
+#password1 {
+  border-radius: 80px;
+  transition: 2s;
+}
+#qui {
+  font-size: 25px;
+  font-weight: bold;
+}
+#btn1 {
+  background: rgb(23, 144, 114);
+  transition: 2s;
+  cursor: pointer;
+}
+#btn1:hover {
+  animation: neon-pulse;
+  background: url(Picture/image5.jpg) center/cover;
+  color: beige;
+}
+#Nom:hover,
+#Prenom:hover,
+#Date:hover,
+#btn1:hover,
+#password:hover,
+#Cpassword:hover,
+#mail1:hover,
+#username1:hover,
+#password1:hover {
+  background: black;
+  color: white;
+}
+#password1,
+#username1 {
+  width: 100%;
+}
+#username1 {
+  margin-bottom: 25px;
+}
+#pass1 {
+  display: block;
+  margin-top: 25px;
+}
+#connexion {
+  display: grid;
+  grid-template-columns: 30% 50%;
+  grid-template-rows: 1fr 1fr;
+}
+
+#h,
+#d,
+#c {
+  font-size: 20px;
+}
+.sexe {
+  font-size: 30px;
+}
+.vid1 {
+  position: absolute;
+  opacity: 30%;
+  z-index: 1;
+  max-width: fit-content;
+  height: 900px;
+}
+.espacephoto {
+  background: url(Picture/image12.jpg) center/cover;
+  border: 2px solid rgba(55, 13, 66, 0.847);
+  border-radius: 400px;
+  width: auto;
+  height: 10px;
+  margin: 30px 30px 30px 30px;
+  padding: 300px 20px 20px 20px;
+  z-index: 2;
+}
+
+#video1 {
+  height: 200px;
+  width: 40%;
+  border-radius: 180px;
+  background: white;
+}
+#telegram {
+  height: 200px;
+  background: fixed;
+  background: url(/css/Picture/image17.jpg);
+}
+.theme {
+  background: rgb(1, 183, 255);
+  text-align: center;
+  align-items: center;
+  width: 20%;
+  height: 30px;
+  transform: translateX(300px);
+  padding: 5px;
+  border-radius: 20px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+.theme-nav {
+  background: black;
+  text-align: center;
+  align-items: center;
+  width: 45%;
+  height: 35px;
+  border-radius: 20px;
+  z-index: -1;
+  position: absolute;
+  margin-left: 5px;
+}
+.btn-light {
+  opacity: 0%;
+}
+.vision {
+  opacity: 100%;
+}
+.vision1 {
+  opacity: 0%;
+}
+.btn-theme-move {
+  transform: translateX(70px);
+}
+.btn-theme-move1 {
+  transform: translateX(0px);
+  transition: 0.5s ease-in-out;
+}
+.theme-white {
+  background: white;
+  color: black;
+}
+.theme-black {
+  background: black;
+  color: white;
+}
+.vision2 {
+  background: white;
+}
+.theme li {
+  list-style: none;
+  text-decoration: none;
+  font-size: 20px;
+  color: white;
+  margin: 5px;
+  cursor: pointer;
+}
+
+@media screen and (max-width: 600px) {
+  #inscription {
+    display: block;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr;
+    z-index: 1;
+    height: auto;
+    background: url(/css/Picture/image13.jpg);
+  }
+  .espacephoto {
+    height: 1%;
+    padding: auto;
+    width: 30%;
+    margin: auto;
+    border-radius: 400px;
+    z-index: 1;
+    transform: translateY(20px);
+  }
+
+  .vid1 {
+    opacity: 30%;
+    z-index: -1;
+    padding-top: 0;
+
+    margin-top: 0;
+    transform: scaleY(1.4);
+    transform: scaleY(-1.4);
+    object-fit: fill;
+    visibility: hidden;
+  }
+
+  .flexbox1,
+  .flexbox2,
+  .flexbox3 {
+    transform: translateX(-40px);
+  }
+}
+@media screen and (min-width: 750px) {
+  #inscription {
+    height: auto;
+  }
+  .vid1 {
+    visibility: hidden;
+  }
+}
